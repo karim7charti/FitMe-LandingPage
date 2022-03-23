@@ -1,0 +1,61 @@
+
+#footer_sec{
+
+    background-color: ghostwhite;
+    transition: 1s;
+    margin:  6em 0 0 0 !important;
+
+}
+
+#footer_sec .logoF{
+    height: 5em;
+    width: 12em;
+    margin-bottom: 30px;
+}
+
+#footer_sec .pay img{
+    height: 2.5em;
+    width: 4em;
+    margin: 0 5px  !important;
+    border-radius: 9px;
+}
+
+
+#footer_sec h4{
+    font-size: 0.9em;
+    padding-bottom: 30px;
+}
+
+#footer_sec p {
+    font-size: 0.8em;
+    margin: 0 0 1em 0;
+}
+
+#footer_sec a{
+    font-size: 0.8em;
+    text-decoration: none !important;
+    color: #222222;
+    margin-bottom: 3em;
+}
+#footer_sec .copy{
+    font-size: 0.8em;
+    margin-top: 5em !important;
+
+}
+
+#footer_sec .links i{
+    margin: 0 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #313131;
+    margin-right: 20px !important;
+
+
+}
+#footer_sec .links i:hover{
+    color: black;
+
+}
+
+
+

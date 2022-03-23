@@ -1,0 +1,138 @@
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: ghostwhite;
+    padding: 0.1em 3em;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#logo{
+    height: 5em;
+    width: 12em;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 1.8em;
+    position: relative;
+}
+
+#navbar li a{
+    font-size: 0.8em;
+    text-decoration: none;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,#navbar li a.active{
+    color: #6E3CBC;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 3px;
+    border-radius: 9px;
+    background-color: #6E3CBC;
+    position: absolute;
+    bottom: -4px;
+    left: 2.4em;
+}
+
+#res_mob{
+    display: none;
+     align-items: center;
+}
+#close_bar{
+    display: none;
+}
+
+
+/*responsive*/
+
+@media (max-width: 799px) {
+    #header{
+        padding: 0.1em 1.5em;
+
+    }
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0 !important;
+        margin-top: 0!important;
+        right: -300px;
+        height: 100vh;
+        width: 290px;
+        background-color: ghostwhite;
+        box-shadow: 0 0px 15px rgba(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar li a.active::after,
+    #navbar li a:hover::after{
+        content: "";
+        width: 30%;
+        height: 3px;
+        border-radius: 9px;
+        background-color: #6E3CBC;
+        position: absolute;
+        bottom: -4px;
+        left: 2.2em;
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+    #navbar li{
+        margin-bottom: 25px !important;
+    }
+    #res_mob{
+        display: flex;
+        align-items: center;
+    }
+    #res_mob i{
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #bar{
+        color: #6E3CBC;
+        cursor: pointer;
+    }
+    #close_bar{
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 24px;
+    }
+    #out{
+        justify-content: flex-end;
+    }
+
+}
+
+@media (max-width: 477px) {
+    #header{
+        padding: 0px 10px;
+    }
+
+}
